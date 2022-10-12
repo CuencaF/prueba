@@ -1,6 +1,6 @@
 import os
 import functools
-from security import generate_password_hash, check_password_hash
+from werkzeug.security import generate_password_hash, check_password_hash
 from flask import Flask, render_template, flash, request, redirect, url_for, jsonify,session,make_response,send_file,g
 import utils as utils
 from db import close_db, get_db
